@@ -1,4 +1,4 @@
-# Deep-Q-Network-with-OpenAI
+# Deep Q Network with OpenAI
 [![](https://img.shields.io/badge/Enviroment-OpenAI-brightgreen)](https://gym.openai.com/)
 ![](https://img.shields.io/pypi/pyversions/torch)
 ![](https://img.shields.io/github/license/deepmind/deepmind-research)
@@ -17,10 +17,12 @@ To replicate the experiment results, a number of dependencies need to be install
 - OpenAI Gym
 - Numpy 
 
-It took me about 10 hours to train the network with 8 cpu, a NVIDIA TESLA V100, and 60 GB Memory(make sure you have at least 40GB mem or the program may crash).Therefore, I highly recomand you to use `monitor` and cloud platforms to run the code, e.g. Google Cloud Platform(Which I used).  
+It took me about 10 hours to train the network with 8 vCPU, a NVIDIA TESLA V100, and 30 GB Memory(make sure you have at least 16GB mem or the program may crash).Therefore, I highly recomand you to use `monitor` and cloud platforms to run the code, e.g. Google Cloud Platform(Which I used).  
 
 Run 
 ---
 ```#Bash
-nohup python3 DQN_Pong.py
+$ nohup python3 DQN_Pong.py
 ```
+According to the DQN code, in the end(After a long training time), you will have a file `nohup.out`, a png image `go.png`, and a pth file `checkpoint1.pth`.
+
